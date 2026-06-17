@@ -3,25 +3,23 @@ package com.test;
 import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
-import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
-public class GetRoleTest {
+public class GetRoleTest extends BaseTest {
 
     @Test
     public void getRoleTest() {
 
         Response response = RestAssured
                 .given()
-                .contentType(ContentType.JSON)
+                .header("Authorization", "Bearer " + getToken())
                 .when()
-                .get("https://lms-server-3-wedg.onrender.com/roles/getAll");
-
-      System.out.println(response.asPrettyString());
-      System.out.println(response.getStatusCode());
+                .get(BASE_URL + "/roles/getAll");
 
         response.then()
                 .statusCode(200)
                 .log().all();
+
     }
+
 }
