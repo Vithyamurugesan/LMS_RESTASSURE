@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-22T20:50:36 IST" name="Default suite" finished-at="2026-06-22T20:50:45 IST" duration-ms="9470">
+  <suite started-at="2026-06-22T22:28:16 IST" name="Default suite" finished-at="2026-06-22T22:28:29 IST" duration-ms="13469">
     <groups>
     </groups>
-    <test started-at="2026-06-22T20:50:36 IST" name="Default test" finished-at="2026-06-22T20:50:45 IST" duration-ms="9470">
-      <class name="com.test.GetRoleTest">
-        <test-method signature="getRoleTest()[pri:0, instance:com.test.GetRoleTest@57db2b13]" started-at="2026-06-22T20:50:36 IST" name="getRoleTest" finished-at="2026-06-22T20:50:45 IST" duration-ms="8759" status="PASS">
+    <test started-at="2026-06-22T22:28:16 IST" name="Default test" finished-at="2026-06-22T22:28:29 IST" duration-ms="13469">
+      <class name="com.test.GetAllNotesTest">
+        <test-method signature="getAllNoteWithParamTest()[pri:0, instance:com.test.GetAllNotesTest@475c9c31]" started-at="2026-06-22T22:28:16 IST" name="getAllNoteWithParamTest" finished-at="2026-06-22T22:28:25 IST" duration-ms="8994" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getRoleTest -->
-        <test-method signature="getRoleWithoutTokenTest()[pri:0, instance:com.test.GetRoleTest@57db2b13]" started-at="2026-06-22T20:50:45 IST" name="getRoleWithoutTokenTest" finished-at="2026-06-22T20:50:45 IST" duration-ms="615" status="PASS">
+        </test-method> <!-- getAllNoteWithParamTest -->
+        <test-method signature="getAllNotes()[pri:0, instance:com.test.GetAllNotesTest@475c9c31]" started-at="2026-06-22T22:28:25 IST" name="getAllNotes" finished-at="2026-06-22T22:28:28 IST" duration-ms="2759" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getRoleWithoutTokenTest -->
-      </class> <!-- com.test.GetRoleTest -->
+        </test-method> <!-- getAllNotes -->
+        <test-method signature="getAllNotesWithNegativePageTest()[pri:0, instance:com.test.GetAllNotesTest@475c9c31]" started-at="2026-06-22T22:28:28 IST" name="getAllNotesWithNegativePageTest" finished-at="2026-06-22T22:28:29 IST" duration-ms="1614" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllNotesWithNegativePageTest -->
+      </class> <!-- com.test.GetAllNotesTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

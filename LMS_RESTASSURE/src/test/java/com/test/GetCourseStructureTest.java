@@ -19,7 +19,5 @@ public class GetCourseStructureTest extends BaseTest {
         response.then()
                 .statusCode(200)
                 .log().all();
-
     }
-
 }
