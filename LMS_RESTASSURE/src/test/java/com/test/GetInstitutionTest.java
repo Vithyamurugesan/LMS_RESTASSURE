@@ -1,5 +1,8 @@
 package com.test;
 
+import java.util.List;
+
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
@@ -15,9 +18,9 @@ public class GetInstitutionTest {
                 .when()
                 .get("https://lms-server-3-wedg.onrender.com/getAll/institution");
 
-        response.then()
-                .statusCode(200)
-                .log().all();
+        Assert.assertEquals(response.getStatusCode(), 200);
+        List<Object> institutions =response.jsonPath().getList("getAllInstitution");
+        Assert.assertTrue(institutions.size() > 0,"Institution list is empty");
+        response.prettyPrint();
     }
-
 }
